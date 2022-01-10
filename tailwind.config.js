@@ -7,7 +7,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      display: ['dark'],
+    },
+  },
   plugins: [],
   purge: {
     content: [
