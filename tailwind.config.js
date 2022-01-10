@@ -1,6 +1,12 @@
 module.exports = {
   darkMode: 'class',
-  theme: {},
+  theme: {
+    extend: {
+      maxWidth: {
+        '8xl': '90rem',
+      },
+    },
+  },
   variants: {},
   plugins: [],
   purge: {
