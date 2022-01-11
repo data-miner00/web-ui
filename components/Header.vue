@@ -21,6 +21,9 @@
           >
         </nuxt-link>
 
+        <!-- version -->
+        <VersionButton />
+
         <!-- right most -->
         <div class="ml-auto flex items-center">
           <!-- navlinks -->
