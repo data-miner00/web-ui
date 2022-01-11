@@ -18,6 +18,10 @@ describe('Dark mode button', () => {
     })
   })
 
+  afterAll(() => {
+    Object.defineProperty(window, 'matchMedia', {})
+  })
+
   test('is a Vue instance', () => {
     const wrapper = shallowMount(DarkModeButton)
     expect(wrapper.vm).toBeTruthy()
