@@ -2,6 +2,7 @@ import { shallowMount, RouterLinkStub, Wrapper } from '@vue/test-utils'
 import VersionButton from '~/components/VersionButton.vue'
 
 describe('Version button component', () => {
+  //@ts-ignore
   let wrapper: Wrapper<VersionButton>
 
   beforeAll(() => {
