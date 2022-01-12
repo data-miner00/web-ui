@@ -80,9 +80,11 @@ export default Vue.extend({
     isPopoverOpen: false,
   }),
   created(): void {
-    window.addEventListener('click', () => {
-      this.isPopoverOpen = false
-    })
+    if (process.client) {
+      window.addEventListener('click', () => {
+        this.isPopoverOpen = false
+      })
+    }
   },
   destroyed(): void {
     window.removeEventListener('click', () => {})
