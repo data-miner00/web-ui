@@ -1,7 +1,9 @@
 <template>
   <header class="sticky top-0 z-40 w-full shadow-sm">
     <div class="mx-auto max-w-8xl">
-      <div class="py-4 lg:px-8 mx-4 lg:mx-0 flex items-center">
+      <div
+        class="py-4 lg:px-8 mx-4 lg:mx-0 flex items-center transition-colors duration-500"
+      >
         <!-- left most -->
         <nuxt-link to="/" class="flex items-center">
           <svg
@@ -23,6 +25,9 @@
 
         <!-- version -->
         <VersionButton />
+
+        <!-- banner -->
+        <BannerLink />
 
         <!-- right most -->
         <div class="ml-auto flex items-center">
