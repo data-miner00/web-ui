@@ -1,6 +1,6 @@
 <template>
   <a
-    class="ml-3 text-xs leading-5 font-medium text-pink-600 dark:text-pink-400 bg-gray-50 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-opacity-50 hover:bg-pink-200 dark:bg-pink-300 dark:bg-opacity-10"
+    class="ml-3 text-xs leading-5 font-medium text-pink-600 dark:text-pink-400 bg-gray-50 rounded-full py-1 px-3 hidden xl:flex items-center hover:bg-opacity-50 hover:bg-pink-200 dark:bg-pink-300 dark:bg-opacity-10 dark:hover:bg-pink-600 dark:hover:bg-opacity-20"
     href="/"
     ><strong class="font-semibold">Gallerium Premium</strong
     ><svg
