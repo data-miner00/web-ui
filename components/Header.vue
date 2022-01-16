@@ -18,7 +18,7 @@
             <circle cx="18.5" cy="17.5" r="4.5" fill="#FB7185" />
           </svg>
           <span
-            class="flex-none uppercase text-2xl tracking-widest ml-4 text-gray-700 dark:text-gray-200"
+            class="flex-none uppercase text-2xl tracking-widest ml-2 text-gray-700 dark:text-gray-200"
             >Gallerium</span
           >
         </nuxt-link>
@@ -36,14 +36,14 @@
             class="text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200"
           >
             <ul class="flex space-x-8">
-              <li>
-                <nuxt-link to="/">Latest</nuxt-link>
-              </li>
-              <li>
+              <li class="hover:text-pink-500 ease transition-colors">
                 <nuxt-link to="/">Docs</nuxt-link>
               </li>
-              <li>
-                <nuxt-link to="/">Showroom</nuxt-link>
+              <li class="hover:text-pink-500 ease transition-colors">
+                <nuxt-link to="/">Playground</nuxt-link>
+              </li>
+              <li class="hover:text-pink-500 ease transition-colors">
+                <nuxt-link to="/">Gallery</nuxt-link>
               </li>
             </ul>
           </nav>
