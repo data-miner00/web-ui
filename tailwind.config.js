@@ -10,6 +10,7 @@ module.exports = {
   variants: {
     extend: {
       display: ['dark'],
+      ringColor: ['hover', 'active'],
     },
   },
   plugins: [],
