@@ -1,5 +1,7 @@
 <template>
-  <header class="sticky top-0 z-40 w-full shadow-sm">
+  <header
+    class="sticky top-0 z-40 w-full border-b border-solid border-gray-100 dark:border-gray-700"
+  >
     <div class="mx-auto max-w-8xl">
       <div
         class="py-4 lg:px-8 mx-4 lg:mx-0 flex items-center transition-colors duration-500"
@@ -36,13 +38,13 @@
             class="text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200"
           >
             <ul class="flex space-x-8">
-              <li class="hover:text-pink-500 ease transition-colors">
+              <li class="hover:text-pink-400 ease transition-colors">
                 <nuxt-link to="/">Docs</nuxt-link>
               </li>
-              <li class="hover:text-pink-500 ease transition-colors">
+              <li class="hover:text-pink-400 ease transition-colors">
                 <nuxt-link to="/">Playground</nuxt-link>
               </li>
-              <li class="hover:text-pink-500 ease transition-colors">
+              <li class="hover:text-pink-400 ease transition-colors">
                 <nuxt-link to="/">Gallery</nuxt-link>
               </li>
             </ul>
