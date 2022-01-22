@@ -38,14 +38,12 @@
             class="text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200"
           >
             <ul class="flex space-x-8">
-              <li class="hover:text-pink-400 ease transition-colors">
-                <nuxt-link to="/">Docs</nuxt-link>
-              </li>
-              <li class="hover:text-pink-400 ease transition-colors">
-                <nuxt-link to="/">Playground</nuxt-link>
-              </li>
-              <li class="hover:text-pink-400 ease transition-colors">
-                <nuxt-link to="/">Gallery</nuxt-link>
+              <li
+                v-for="navlink in navlinks"
+                :key="navlink.title"
+                class="hover:text-pink-400 ease transition-colors"
+              >
+                <nuxt-link :to="navlink.to">{{ navlink.title }}</nuxt-link>
               </li>
             </ul>
           </nav>
@@ -75,3 +73,23 @@
     </div>
   </header>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+
+class NavLink {
+  constructor(public to: string, public title: string) {}
+}
+
+export default Vue.extend({
+  computed: {
+    navlinks() {
+      return [
+        new NavLink('', 'Docs'),
+        new NavLink('', 'Playground'),
+        new NavLink('', 'Gallery'),
+      ]
+    },
+  },
+})
+</script>
