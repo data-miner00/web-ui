@@ -37,6 +37,9 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+
+    '@nuxt/content',
+    'nuxt-i18n',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -49,6 +52,28 @@ export default {
   pwa: {
     manifest: {
       lang: 'en',
+    },
+  },
+
+  content: {},
+
+  i18n: {
+    defaultLocale: 'en',
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        file: 'en-US.json',
+      },
+      {
+        code: 'ja',
+        iso: 'ja-JP',
+        file: 'ja-JP.json',
+      },
+    ],
+    langDir: 'locales/',
+    vueI18n: {
+      fallbackLocale: 'en',
     },
   },
 
