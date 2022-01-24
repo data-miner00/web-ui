@@ -5,10 +5,8 @@
   >
     <nav id="nav" class="lg:text-sm lg:leading-6 relative">
       <div class="sticky top-0 -ml-0.5 pointer-events-none">
-        <div class="h-10"></div>
-        <div
-          class="bg-white dark:bg-gray-700 relative pointer-events-auto rounded"
-        >
+        <div class="h-10 bg-white dark:bg-gray-800"></div>
+        <div class="relative pointer-events-auto rounded">
           <button
             type="button"
             class="hidden w-full lg:flex items-center text-sm leading-6 text-gray-400 rounded-md ring-1 ring-gray-100 shadow-sm py-1.5 pl-2 pr-3 hover:ring-gray-300 dark:bg-gray-700 dark:highlight-white/5 dark:ring-gray-700 dark:hover:bg-gray-600 dark:hover:ring-gray-600"
@@ -127,6 +125,7 @@ class Category {
 }
 
 export default Vue.extend({
+  name: 'Sidebar',
   computed: {
     mainLinks() {
       return [
