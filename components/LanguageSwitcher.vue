@@ -39,18 +39,28 @@
     </button>
     <div
       v-show="isLanguagePopoverOpen"
-      class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-gray-300 text-sm leading-6 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-900"
+      class="absolute top-full right-0 mt-1 py-2 w-32 rounded-lg bg-white shadow ring-1 ring-gray-300 text-sm leading-6 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-900"
       aria-labelledby="headlessui-menu-button-2"
       id="headlessui-menu-items-3"
       role="menu"
       tabindex="0"
     >
-      <span class="block" id="headlessui-menu-item-1" role="menuitem">
+      <nuxt-link
+        class="block px-3"
+        id="headlessui-menu-item-1"
+        role="menuitem"
+        :to="switchLocalePath('en')"
+      >
         English
-      </span>
-      <span class="block" id="headlessui-menu-item-2" role="menuitem">
+      </nuxt-link>
+      <nuxt-link
+        class="block px-3"
+        id="headlessui-menu-item-2"
+        role="menuitem"
+        :to="switchLocalePath('ja')"
+      >
         Japanese
-      </span>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -76,3 +86,9 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.nuxt-link-active.nuxt-link-exact-active {
+  @apply text-pink-400;
+}
+</style>
