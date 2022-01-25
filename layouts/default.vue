@@ -1,5 +1,8 @@
 <template>
-  <div class="dark:bg-gray-800 transition-colors duration-250 min-h-screen">
+  <div
+    @click="closeIfPopover"
+    class="dark:bg-gray-800 transition-colors duration-250 min-h-screen"
+  >
     <Header />
     <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
@@ -15,5 +18,12 @@
 <script lang="ts">
 import Vue from 'vue'
 
-export default Vue.extend({})
+export default Vue.extend({
+  methods: {
+    closeIfPopover(): void {
+      this.$store.commit('popover/setVersionPopover', false)
+      this.$store.commit('popover/setLanguagePopover', false)
+    },
+  },
+})
 </script>

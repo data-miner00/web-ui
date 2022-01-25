@@ -25,7 +25,7 @@
       </svg>
     </button>
     <div
-      v-show="isPopoverOpen"
+      v-show="isVersionPopoverOpen"
       class="absolute top-full mt-1 py-2 w-40 rounded-lg bg-white shadow ring-1 ring-gray-300 text-sm leading-6 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:highlight-white/5 dark:ring-gray-900"
       aria-labelledby="headlessui-menu-button-1"
       id="headlessui-menu-items-2"
@@ -76,23 +76,18 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'VersionButton',
-  data: () => ({
-    isPopoverOpen: false,
-  }),
-  created(): void {
-    if (process.client) {
-      window.addEventListener('click', () => {
-        this.isPopoverOpen = false
-      })
-    }
-  },
-  destroyed(): void {
-    window.removeEventListener('click', () => {})
-  },
   methods: {
     handleClick(event: Event): void {
-      this.isPopoverOpen = true
       event.stopPropagation()
+      this.toggleVersionPopover()
+    },
+    toggleVersionPopover(): void {
+      this.$store.commit('popover/toggleVersionPopover')
+    },
+  },
+  computed: {
+    isVersionPopoverOpen(): boolean {
+      return this.$store.state.popover.isVersionPopoverOpen as boolean
     },
   },
 })
