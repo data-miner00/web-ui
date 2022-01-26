@@ -21,8 +21,19 @@ import Vue from 'vue'
 export default Vue.extend({
   methods: {
     closeIfPopover(): void {
-      this.$store.commit('popover/setVersionPopover', false)
-      this.$store.commit('popover/setLanguagePopover', false)
+      if (this.isLanguagePopoverOpen)
+        this.$store.commit('popover/setLanguagePopover', false)
+
+      if (this.isVersionPopoverOpen)
+        this.$store.commit('popover/setVersionPopover', false)
+    },
+  },
+  computed: {
+    isVersionPopoverOpen(): boolean {
+      return this.$store.state.popover.isVersionPopoverOpen as boolean
+    },
+    isLanguagePopoverOpen(): boolean {
+      return this.$store.state.popover.isLanguagePopoverOpen as boolean
     },
   },
 })
