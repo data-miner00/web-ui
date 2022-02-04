@@ -5,7 +5,7 @@
       <li v-for="link in quicklinks" :key="link.id">
         <nuxt-link
           :to="`#${link.id}`"
-          class="block py-1 font-semibold dark:text-gray-500 dark:hover:text-gray-200"
+          class="block py-1 font-medium text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
         >
           <span
             :class="[
