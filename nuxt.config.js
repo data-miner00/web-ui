@@ -55,7 +55,13 @@ export default {
     },
   },
 
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-lucario.css',
+      },
+    },
+  },
 
   i18n: {
     defaultLocale: 'en',
