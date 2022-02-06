@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky top-0 z-40 w-full border-b border-solid border-gray-100 dark:border-gray-700"
+    class="sticky top-0 z-40 w-full border-b border-solid border-gray-100 dark:border-gray-700 dark:bg-gray-800 bg-white"
   >
     <div class="mx-auto max-w-8xl">
       <div
