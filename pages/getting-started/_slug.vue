@@ -7,6 +7,7 @@
     :author="article.author"
     :previous="previous"
     :next="next"
+    :quicklinks="article.toc"
   >
     <nuxt-content :document="article" />
   </ArticleSlot>

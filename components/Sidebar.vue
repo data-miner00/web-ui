@@ -150,19 +150,19 @@ export default Vue.extend({
           new CategoryLink('internet-designs/', 'Footer', ''),
           new CategoryLink('internet-designs/', 'Subscription', ''),
         ]),
-        new Category('Actual Designs', [
+        new Category('Actual Designs II', [
           new CategoryLink('actual-designs', 'Navbar', ''),
           new CategoryLink('actual-designs', 'Sidebar', ''),
           new CategoryLink('actual-designs', 'Footer', ''),
           new CategoryLink('actual-designs', 'Subscription', ''),
         ]),
-        new Category('Actual Designs', [
+        new Category('Actual Designs III', [
           new CategoryLink('actual-designs', 'Navbar', ''),
           new CategoryLink('actual-designs', 'Sidebar', ''),
           new CategoryLink('actual-designs', 'Footer', ''),
           new CategoryLink('actual-designs', 'Subscription', ''),
         ]),
-        new Category('Actual Designs', [
+        new Category('Actual Designs IV', [
           new CategoryLink('actual-designs', 'Navbar', ''),
           new CategoryLink('actual-designs', 'Sidebar', ''),
           new CategoryLink('actual-designs', 'Footer', ''),

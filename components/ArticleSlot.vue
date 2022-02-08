@@ -14,12 +14,61 @@
       >
         {{ title }}
       </h1>
-      <p class="mt-2">{{ description }}</p>
+      <p class="mt-2 text-gray-700 dark:text-gray-200">{{ description }}</p>
     </header>
     <div class="mt-8">
       <slot />
     </div>
-    <footer></footer>
+    <footer class="text-sm leading-6 mt-12">
+      <div
+        class="mb-10 text-gray-700 font-semibold flex items-center dark:text-gray-200"
+      >
+        <nuxt-link
+          v-if="previous"
+          class="group flex items-center hover:text-gray-900 dark:hover:text-white"
+          :to="previous.slug"
+        >
+          <svg
+            viewBox="0 0 3 6"
+            class="mr-3 w-auto h-1.5 text-gray-400 overflow-visible group-hover:text-gray-600 dark:group-hover:text-gray-300"
+          >
+            <path
+              d="M3 0L0 3L3 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path></svg
+          >{{ previous.title }}
+        </nuxt-link>
+        <div v-else></div>
+        <nuxt-link
+          v-if="next"
+          :to="next.slug"
+          class="group ml-auto flex items-center hover:text-gray-900 dark:hover:text-white"
+          >{{ next.title
+          }}<svg
+            viewBox="0 0 3 6"
+            class="ml-3 w-auto h-1.5 text-gray-400 overflow-visible group-hover:text-gray-600 dark:group-hover:text-gray-300"
+          >
+            <path
+              d="M0 0L3 3L0 6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path></svg
+        ></nuxt-link>
+        <div v-else></div>
+      </div>
+      <div
+        class="pt-10 pb-28 border-t border-gray-200 sm:flex justify-between text-gray-500 dark:border-gray-600"
+      >
+        Temp footer
+      </div>
+    </footer>
     <Quicklinks :quicklinks="quicklinks" />
   </div>
 </template>
@@ -36,9 +85,9 @@ export default Vue.extend({
     //   type: String,
     //   required: true,
     // },
-    // quicklinks: {
-    //   type: Array,
-    // },
+    quicklinks: {
+      type: Array,
+    },
     lastUpdated: {
       type: String,
       default: '2020-06-22T10:59:27.863Z',
@@ -47,7 +96,7 @@ export default Vue.extend({
       type: Object,
       default: () => null,
     },
-    prev: {
+    previous: {
       type: Object,
       default: () => null,
     },
@@ -56,29 +105,5 @@ export default Vue.extend({
       default: () => null,
     },
   },
-  data: () => ({
-    quicklinks: [
-      {
-        id: '123',
-        depth: 2,
-        text: 'Query',
-      },
-      {
-        id: '1223',
-        depth: 2,
-        text: 'Memorandum',
-      },
-      {
-        id: '1423',
-        depth: 2,
-        text: 'Forte',
-      },
-      {
-        id: '1623',
-        depth: 2,
-        text: 'Kafka',
-      },
-    ],
-  }),
 })
 </script>
