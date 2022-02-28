@@ -1,5 +1,5 @@
 <template>
-  <div>{{ $t('hello') }}</div>
+  <div class="pt-8 dark:text-white">{{ $t('hello') }}</div>
 </template>
 
 <script lang="ts">
