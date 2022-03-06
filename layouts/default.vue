@@ -103,6 +103,18 @@ export default Vue.extend({
   @apply rounded-sm border-l-4 border-pink-400 py-3 my-3 pl-6 dark:bg-gray-600 bg-gray-200 bg-opacity-30;
 }
 
+.nuxt-content blockquote.warning {
+  @apply border-yellow-500 text-yellow-500 bg-yellow-100;
+}
+
+.nuxt-content blockquote.info {
+  @apply border-blue-500 text-blue-500 bg-blue-100;
+}
+
+.nuxt-content blockquote.danger {
+  @apply border-red-500 text-red-500 bg-red-100;
+}
+
 .nuxt-content blockquote p:last-of-type {
   @apply my-0;
 }
