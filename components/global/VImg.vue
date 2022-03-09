@@ -1,8 +1,10 @@
 <template>
   <div
-    class="img-container w-full rounded border border-solid border-gray-50 dark:border-gray-600"
+    class="img-container w-full rounded border border-solid border-gray-200 dark:border-gray-600"
   >
-    <div class="w-full py-6 bg-gradient-to-t from-gray-700 to-transparent">
+    <div
+      class="w-full py-6 bg-gradient-to-t from-gray-50 dark:from-gray-700 to-transparent"
+    >
       <img :src="fullPath" :alt="description" class="w-80 block mx-auto" />
     </div>
   </div>
@@ -40,8 +42,8 @@ export default Vue.extend({
  */
 
 .img-container {
-  --pattern-base-color: #e5e5f7;
-  --pattern-box-color: #444cf7;
+  --pattern-base-color: white;
+  --pattern-box-color: #e5e7eb;
 
   background-color: var(--pattern-base-color);
   opacity: 0.8;
