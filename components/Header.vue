@@ -84,11 +84,11 @@ class NavLink {
 
 export default Vue.extend({
   computed: {
-    navlinks() {
+    navlinks(): Array<NavLink> {
       return [
         new NavLink('', 'Docs'),
         new NavLink('', 'Playground'),
-        new NavLink('', 'Gallery'),
+        new NavLink('/gallery', 'Gallery'),
       ]
     },
   },
