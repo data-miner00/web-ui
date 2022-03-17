@@ -66,7 +66,18 @@
       <div
         class="pt-10 pb-28 border-t border-gray-200 sm:flex justify-between text-gray-500 dark:border-gray-600"
       >
-        Temp footer
+        <div class="flex">
+          <p>Copyright &copy; {{ currentYear }} Gallerium Labs Ltd.</p>
+
+          <p
+            class="sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 dark:border-gray-700"
+          >
+            Cookies
+          </p>
+        </div>
+        <div>
+          <p>Edit this page on GitHub</p>
+        </div>
       </div>
     </footer>
     <Quicklinks :quicklinks="quicklinks" />
@@ -103,6 +114,11 @@ export default Vue.extend({
     next: {
       type: Object,
       default: () => null,
+    },
+  },
+  computed: {
+    currentYear(): number {
+      return new Date().getFullYear()
     },
   },
 })
