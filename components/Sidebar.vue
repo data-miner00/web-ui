@@ -140,8 +140,9 @@ export default Vue.extend({
     categories() {
       return [
         new Category('Getting Started', [
-          new CategoryLink('', 'Introduction', ''),
+          new CategoryLink('/', 'Introduction', ''),
           new CategoryLink('/getting-started', 'Future Works', ''),
+          new CategoryLink('/getting-started/development', 'Development', ''),
         ]),
         new Category('Internet Designs', [
           new CategoryLink('internet-designs/', 'Navbar', ''),
