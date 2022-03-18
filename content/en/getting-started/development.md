@@ -10,11 +10,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">A comprehensive <a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> platform impacts companies both internally (increases efficiencies and improves ability to innovation) and externally (improves customer experience). Read our commissioned study conducted by Forrester Consulting for more. <a href="https://t.co/jaJ4CVkv9d">https://t.co/jaJ4CVkv9d</a></p>&mdash; RapidMiner (@RapidMiner) <a href="https://twitter.com/RapidMiner/status/1496598998748172305?ref_src=twsrc%5Etfw">February 23, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Sample usage
 
 ### Font decoration
 
 Ut enim ad minim veniam, **quis nostrud exercitation** ullamco laboris nisi ut aliquip _ex ea commodo_ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu `fugiat` nulla pariatur.
+
+<iframe width="560" height="315" class="mx-auto mb-4" src="https://www.youtube.com/embed/buqmWOVEk1w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Image usage
 
