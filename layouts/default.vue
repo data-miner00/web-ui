@@ -51,17 +51,18 @@ export default Vue.extend({
 .nuxt-content h3 {
   @apply font-semibold text-xl text-black dark:text-white mb-2;
 }
+
 .nuxt-content h4 {
 }
 
-.nuxt-content h1:hover a,
 .nuxt-content h2:hover a,
-.nuxt-content h3:hover a {
+.nuxt-content h3:hover a,
+.nuxt-content h4:hover a {
 }
 
-.nuxt-content h1 a,
 .nuxt-content h2 a,
-.nuxt-content h3 a {
+.nuxt-content h3 a,
+.nuxt-content h4 a {
 }
 
 .nuxt-content p,
@@ -155,16 +156,12 @@ export default Vue.extend({
   @apply border-b border-solid border-gray-300 dark:border-gray-600;
 }
 
-.nuxt-content th,
-.nuxt-content td {
-}
-
 .nuxt-content tbody tr {
   @apply border-b border-solid border-gray-200 dark:border-gray-700;
 }
 
 .nuxt-content td,
 .nuxt-content th {
-  @apply py-2;
+  @apply p-2;
 }
 </style>
