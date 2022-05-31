@@ -9,7 +9,7 @@
       aria-controls="headlessui-menu-items-2"
       @click="handleClick"
     >
-      v<!-- -->3.0.12<svg
+      v3.0.12<svg
         width="6"
         height="3"
         class="ml-2 overflow-visible"
