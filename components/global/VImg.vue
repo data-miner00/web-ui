@@ -1,11 +1,16 @@
 <template>
   <div
-    class="img-container w-full rounded border border-solid border-gray-200 dark:border-gray-600"
+    class="img-container w-full rounded border border-solid border-gray-200 dark:border-gray-600 my-5"
   >
     <div
       class="w-full py-6 bg-gradient-to-t from-gray-50 dark:from-gray-700 to-transparent"
     >
-      <img :src="fullPath" :alt="description" class="w-80 block mx-auto" />
+      <img
+        :src="fullPath"
+        :alt="description"
+        class="block mx-auto"
+        :class="widthclass"
+      />
     </div>
   </div>
 </template>
@@ -26,7 +31,10 @@ export default Vue.extend({
       required: true,
     },
     caption: String,
-    maxWidth: String,
+    widthclass: {
+      type: String,
+      default: 'w-80',
+    },
   },
   computed: {
     fullPath() {
