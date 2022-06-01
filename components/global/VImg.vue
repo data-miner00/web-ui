@@ -54,7 +54,7 @@ export default Vue.extend({
   --pattern-box-color: #e5e7eb;
 
   background-color: var(--pattern-base-color);
-  opacity: 0.8;
+  opacity: 0.95;
   background-image: repeating-linear-gradient(
       45deg,
       var(--pattern-box-color) 25%,
