@@ -9,7 +9,6 @@
         >
           <span
             :class="[
-              { 'text-purple-600 font-bold': false },
               { 'py-2': link.depth === 2, 'ml-2 pb-2': link.depth === 3 },
             ]"
             >{{ link.text }}</span
@@ -36,5 +35,9 @@ export default Vue.extend({
   top: 4rem;
   right: max(0px, calc(50% - 45rem));
   @apply bottom-0;
+}
+
+a.active {
+  @apply font-bold text-pink-400;
 }
 </style>
