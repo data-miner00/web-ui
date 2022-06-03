@@ -45,14 +45,15 @@ export default Vue.extend({
 }
 
 .nuxt-content h2 {
-  @apply mb-2 text-sm leading-6 font-semibold text-pink-500 dark:text-pink-400 mt-10;
+  @apply mb-2 text-sm leading-6 font-semibold text-pink-500 dark:text-pink-400 mt-10 relative;
 }
 
 .nuxt-content h3 {
-  @apply font-semibold text-xl text-black dark:text-white mb-2;
+  @apply font-semibold text-xl text-black dark:text-white mb-2 relative;
 }
 
 .nuxt-content h4 {
+  @apply relative;
 }
 
 .nuxt-content h2:hover a,
