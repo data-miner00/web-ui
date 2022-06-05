@@ -42,7 +42,7 @@
             ></path></svg
           >{{ previous.title }}
         </nuxt-link>
-        <div v-else></div>
+        <div v-else class="empty-div"></div>
         <nuxt-link
           v-if="next"
           :to="next.slug"
@@ -61,7 +61,7 @@
               stroke-linejoin="round"
             ></path></svg
         ></nuxt-link>
-        <div v-else></div>
+        <div v-else class="empty-div"></div>
       </div>
       <div
         class="pt-10 pb-28 border-t border-gray-200 sm:flex justify-between text-gray-500 dark:border-gray-600"
