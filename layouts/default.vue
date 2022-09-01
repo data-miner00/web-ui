@@ -106,15 +106,15 @@ export default Vue.extend({
 }
 
 .nuxt-content blockquote.warning {
-  @apply border-yellow-500 text-yellow-500 bg-yellow-100;
+  @apply border-yellow-400 text-yellow-400 bg-yellow-100;
 }
 
 .nuxt-content blockquote.info {
-  @apply border-blue-500 text-blue-500 bg-blue-100;
+  @apply border-blue-400 text-blue-400 bg-blue-100;
 }
 
 .nuxt-content blockquote.danger {
-  @apply border-red-500 text-red-500 bg-red-100;
+  @apply border-red-400 text-red-400 bg-red-100;
 }
 
 .nuxt-content blockquote p:last-of-type {
