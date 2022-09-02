@@ -49,7 +49,7 @@
           class="text-gray-700 dark:text-gray-100"
         >
           <nuxt-link
-            :to="mainLink.to"
+            :to="mainLink.url"
             class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-sky-500 dark:text-sky-400"
             ><div
               class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500 dark:highlight-white/10"
@@ -74,11 +74,11 @@
         </li>
         <li
           v-for="category in categories"
-          :key="category.title"
+          :key="category.section"
           class="mt-12 lg:mt-8"
         >
           <h5 class="mb-8 lg:mb-3 font-bold text-gray-600 dark:text-gray-200">
-            {{ category.title }}
+            {{ category.section }}
           </h5>
           <ul
             class="category space-y-6 lg:space-y-2 border-l border-gray-100 dark:border-gray-600"
@@ -89,7 +89,7 @@
             >
               <nuxt-link
                 class="block border-l pl-4 -ml-px font-semibold"
-                :to="categoryLink.to"
+                :to="category.basepath + categoryLink.url"
                 >{{ categoryLink.title }}</nuxt-link
               >
             </li>
@@ -103,73 +103,17 @@
 <script lang="ts">
 import Vue from 'vue'
 
-class MainLink {
-  constructor(
-    public to: string,
-    public title: string,
-    public conditionalClasses: string,
-    public icon?: string
-  ) {}
-}
-
-class CategoryLink {
-  constructor(
-    public to: string,
-    public title: string,
-    public conditionalClasses: string
-  ) {}
-}
-
-class Category {
-  constructor(public title: string, public links: Array<CategoryLink>) {}
-}
+import type { MainLink, Category } from '../models/links'
+import links from '../links.json'
 
 export default Vue.extend({
   name: 'Sidebar',
   computed: {
-    mainLinks() {
-      return [
-        new MainLink('', 'Documentation', ''),
-        new MainLink('', 'Components', ''),
-        new MainLink('', 'Libraries', ''),
-        new MainLink('', 'Playground', ''),
-        new MainLink('', 'Information', ''),
-        new MainLink('', 'Frameworks', ''),
-      ]
+    mainLinks(): Array<MainLink> {
+      return links.main
     },
-    categories() {
-      return [
-        new Category('Getting Started', [
-          new CategoryLink('/', 'Introduction', ''),
-          new CategoryLink('/getting-started', 'Future Works', ''),
-          new CategoryLink('/getting-started/development', 'Development', ''),
-        ]),
-        new Category('Internet Designs', [
-          new CategoryLink('internet-designs/', 'Navbar', ''),
-          new CategoryLink('internet-designs/', 'Sidebar', ''),
-          new CategoryLink('internet-designs/', 'Header', ''),
-          new CategoryLink('internet-designs/', 'Footer', ''),
-          new CategoryLink('internet-designs/', 'Subscription', ''),
-        ]),
-        new Category('Actual Designs II', [
-          new CategoryLink('actual-designs', 'Navbar', ''),
-          new CategoryLink('actual-designs', 'Sidebar', ''),
-          new CategoryLink('actual-designs', 'Footer', ''),
-          new CategoryLink('actual-designs', 'Subscription', ''),
-        ]),
-        new Category('Actual Designs III', [
-          new CategoryLink('actual-designs', 'Navbar', ''),
-          new CategoryLink('actual-designs', 'Sidebar', ''),
-          new CategoryLink('actual-designs', 'Footer', ''),
-          new CategoryLink('actual-designs', 'Subscription', ''),
-        ]),
-        new Category('Actual Designs IV', [
-          new CategoryLink('actual-designs', 'Navbar', ''),
-          new CategoryLink('actual-designs', 'Sidebar', ''),
-          new CategoryLink('actual-designs', 'Footer', ''),
-          new CategoryLink('actual-designs', 'Subscription', ''),
-        ]),
-      ]
+    categories(): Array<Category> {
+      return links.categories
     },
   },
 })

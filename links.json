@@ -1,0 +1,92 @@
+{
+  "main": [
+    {
+      "title": "Documentation",
+      "url": "/getting-started/introduction"
+    },
+    {
+      "title": "Components",
+      "url": ""
+    },
+    {
+      "title": "Library",
+      "url": ""
+    },
+    {
+      "title": "Playground",
+      "url": ""
+    },
+    {
+      "title": "Information",
+      "url": ""
+    },
+    {
+      "title": "Tailwind.css",
+      "url": "https://tailwindcss.com/"
+    }
+  ],
+  "categories": [
+    {
+      "section": "Getting Started",
+      "basepath": "/getting-started",
+      "links": [
+        {
+          "title": "Introduction",
+          "url": "/introduction"
+        },
+        {
+          "title": "Disclaimer",
+          "url": "/disclaimer"
+        },
+        {
+          "title": "Development",
+          "url": "/development"
+        }
+      ]
+    },
+    {
+      "section": "Components",
+      "basepath": "/collections",
+      "links": [
+        {
+          "title": "Navbar",
+          "url": "/navbar"
+        },
+        {
+          "title": "Accordion",
+          "url": "/accordion"
+        },
+        {
+          "title": "Advertisement",
+          "url": "/advertisement"
+        },
+        {
+          "title": "Cookies",
+          "url": "/cookies"
+        }
+      ]
+    },
+    {
+      "section": "Resources",
+      "basepath": "/resources",
+      "links": [
+        {
+          "title": "Articles",
+          "url": "/articles"
+        },
+        {
+          "title": "Youtube",
+          "url": "/youtube"
+        },
+        {
+          "title": "Advertisement",
+          "url": "/advertisement"
+        },
+        {
+          "title": "Toolbox",
+          "url": "/toolbox"
+        }
+      ]
+    }
+  ]
+}
