@@ -48,7 +48,34 @@
           :key="mainLink.title"
           class="text-gray-700 dark:text-gray-100"
         >
+          <a
+            v-if="mainLink.url.startsWith('http')"
+            :href="mainLink.url"
+            target="_blank"
+            class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-sky-500 dark:text-sky-400"
+          >
+            <div
+              class="mr-4 rounded-md ring-1 ring-slate-900/5 shadow-sm group-hover:shadow group-hover:ring-slate-900/10 dark:ring-0 dark:shadow-none dark:group-hover:shadow-none dark:group-hover:highlight-white/10 group-hover:shadow-sky-200 dark:group-hover:bg-sky-500 dark:bg-sky-500 dark:highlight-white/10"
+            >
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8.5 7c1.093 0 2.117.27 3 .743V17a6.345 6.345 0 0 0-3-.743c-1.093 0-2.617.27-3.5.743V7.743C5.883 7.27 7.407 7 8.5 7Z"
+                  class="fill-sky-200 group-hover:fill-sky-500 dark:fill-sky-300 dark:group-hover:fill-sky-300"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M15.5 7c1.093 0 2.617.27 3.5.743V17c-.883-.473-2.407-.743-3.5-.743s-2.117.27-3 .743V7.743a6.344 6.344 0 0 1 3-.743Z"
+                  class="fill-sky-400 group-hover:fill-sky-500 dark:fill-sky-200 dark:group-hover:fill-sky-200"
+                ></path>
+              </svg>
+            </div>
+            {{ mainLink.title }}
+          </a>
           <nuxt-link
+            v-else
             :to="mainLink.url"
             class="group flex items-center lg:text-sm lg:leading-6 mb-4 font-semibold text-sky-500 dark:text-sky-400"
             ><div
@@ -87,7 +114,16 @@
               v-for="categoryLink in category.links"
               :key="categoryLink.title"
             >
+              <a
+                v-if="categoryLink.url.startsWith('http')"
+                class="block border-l pl-4 -ml-px font-semibold"
+                :href="categoryLink.url"
+                target="_blank"
+              >
+                {{ categoryLink.title }}
+              </a>
               <nuxt-link
+                v-else
                 class="block border-l pl-4 -ml-px font-semibold"
                 :to="category.basepath + categoryLink.url"
                 >{{ categoryLink.title }}</nuxt-link
