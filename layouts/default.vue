@@ -81,6 +81,14 @@ export default Vue.extend({
   @apply absolute bg-gray-200 dark:bg-gray-500 bg-opacity-30 dark:bg-opacity-30 -inset-1 rounded-md pointer-events-none;
 }
 
+.nuxt-content-highlight {
+  @apply relative;
+}
+
+.nuxt-content-highlight .filename {
+  @apply absolute top-2 right-2 text-gray-400 z-10 px-1 rounded-sm text-xs;
+}
+
 .nuxt-content-highlight pre code {
   @apply mx-0;
 }
