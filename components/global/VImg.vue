@@ -3,6 +3,7 @@
     class="img-container w-full rounded border border-solid border-gray-200 dark:border-gray-600 my-5"
   >
     <div
+      @click="toggleImageOverlay"
       class="w-full py-6 bg-gradient-to-t from-gray-50 dark:from-gray-700 to-transparent"
     >
       <img
@@ -11,6 +12,19 @@
         class="block mx-auto"
         :class="widthclass"
       />
+    </div>
+    <div
+      @click="toggleImageOverlay"
+      class="fixed inset-0 bg-opacity-80 bg-black flex items-center justify-center z-20"
+      :class="{ hidden: !overlayOpen }"
+    >
+      <div @click.stop="" class="">
+        <img
+          :src="fullPath"
+          :alt="description"
+          class="block mx-auto max-w-4xl"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -34,6 +48,14 @@ export default Vue.extend({
     widthclass: {
       type: String,
       default: 'w-80',
+    },
+  },
+  data: () => ({
+    overlayOpen: false,
+  }),
+  methods: {
+    toggleImageOverlay() {
+      this.$data.overlayOpen = !this.$data.overlayOpen
     },
   },
   computed: {
