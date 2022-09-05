@@ -3,7 +3,11 @@ title: Navigation Bar
 category: Collections
 description: An overview of the navigation bar implementations found online.
 tags:
-  - n/a
+  - components
+  - navigation
+  - header
+  - sidebar
+  - footer
 ---
 
 Navigation bar is the most **crucial** component of the modern web. Without navigation bar, user may have a hard time navigating in and out of the website as there is no road signs that points to the destination while user aimlessly browsing around.
