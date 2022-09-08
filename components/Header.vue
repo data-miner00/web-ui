@@ -43,7 +43,7 @@
                 :key="navlink.title"
                 class="hover:text-pink-400 ease transition-colors"
               >
-                <nuxt-link :to="navlink.to">{{ navlink.title }}</nuxt-link>
+                <nuxt-link :to="navlink.url">{{ navlink.title }}</nuxt-link>
               </li>
             </ul>
           </nav>
@@ -77,18 +77,24 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
-class NavLink {
-  constructor(public to: string, public title: string) {}
-}
+import type { Link } from '../models/links'
 
 export default Vue.extend({
   computed: {
-    navlinks(): Array<NavLink> {
+    navlinks(): Array<Link> {
       return [
-        new NavLink('', 'Docs'),
-        new NavLink('', 'Playground'),
-        new NavLink('/gallery', 'Gallery'),
+        {
+          title: 'Docs',
+          url: '',
+        },
+        {
+          title: 'Playground',
+          url: '',
+        },
+        {
+          title: 'Gallery',
+          url: '/gallery',
+        },
       ]
     },
   },
