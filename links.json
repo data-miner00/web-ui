@@ -67,12 +67,52 @@
       ]
     },
     {
+      "section": "Web Technologies",
+      "basepath": "/tech",
+      "links": [
+        {
+          "title": "React",
+          "url": "/react"
+        },
+        {
+          "title": "Angular",
+          "url": "/angular"
+        },
+        {
+          "title": "Vue",
+          "url": "/vue"
+        },
+        {
+          "title": "ASP.NET",
+          "url": "/aspdotnet"
+        },
+        {
+          "title": "CSS",
+          "url": "/css"
+        }
+      ]
+    },
+    {
+      "section": "Web3",
+      "basepath": "/web3",
+      "links": [
+        {
+          "title": "Wallets",
+          "url": "/wallets"
+        }
+      ]
+    },
+    {
       "section": "Resources",
       "basepath": "/resources",
       "links": [
         {
           "title": "Articles",
           "url": "/articles"
+        },
+        {
+          "title": "Colors",
+          "url": "/colors"
         },
         {
           "title": "Youtube",
@@ -85,6 +125,10 @@
         {
           "title": "Toolbox",
           "url": "/toolbox"
+        },
+        {
+          "title": "Dumps",
+          "url": "/dumps"
         }
       ]
     }
