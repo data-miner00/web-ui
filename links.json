@@ -71,6 +71,10 @@
       "basepath": "/tech",
       "links": [
         {
+          "title": "Overview",
+          "url": "/overview"
+        },
+        {
           "title": "React",
           "url": "/react"
         },
@@ -87,8 +91,34 @@
           "url": "/aspdotnet"
         },
         {
+          "title": "Laravel",
+          "url": "/laravel"
+        },
+        {
           "title": "CSS",
           "url": "/css"
+        }
+      ]
+    },
+    {
+      "section": "Testing",
+      "basepath": "/testing",
+      "links": [
+        {
+          "title": "Jest",
+          "url": "/jest"
+        },
+        {
+          "title": "Chai",
+          "url": "/chai"
+        },
+        {
+          "title": "Jasmine",
+          "url": "/jasmine"
+        },
+        {
+          "title": "Selenium",
+          "url": "/selenium"
         }
       ]
     },
