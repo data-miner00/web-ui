@@ -4,7 +4,7 @@
   >
     <div class="">
       <div class="text-center py-6">
-        <span class="text-9xl fontbold font-mono">404</span>
+        <span class="text-9xl fontbold font-mono">{{ error.statusCode }}</span>
       </div>
       <h1 class="text-center my-6">
         {{ errorMessage }}
