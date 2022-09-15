@@ -73,19 +73,15 @@ Please visit this [website](https://www.google.com)
 
 ### Code blocks
 
-```cs[Main.cs]
-using System.Collections.Generic;
+```vb[Main.vb]
+Public Class Person
+    Public Property FirstName As String
+    Public Property LastName As String
 
-namespace MainProj
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello"); Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");
-        }
-    }
-}
+    Public Overrides Function ToString() As String
+        Return FirstName & " " & LastName
+    End Function
+End Class
 ```
 
 ### Table views
