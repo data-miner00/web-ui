@@ -53,6 +53,10 @@
           "url": "/navbar"
         },
         {
+          "title": "Breadcrumbs",
+          "url": "/breadcrumbs"
+        },
+        {
           "title": "Accordion",
           "url": "/accordion"
         },
@@ -73,6 +77,10 @@
         {
           "title": "Overview",
           "url": "/overview"
+        },
+        {
+          "title": "Browsers",
+          "url": "/browsers"
         },
         {
           "title": "React",
