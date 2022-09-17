@@ -1,6 +1,9 @@
 ###
 # Place your Prettier ignore content here
 
+# The automated formatting of tables makes the editing much of a hassle in a smaller screen resolution
+content/**/*.md
+
 ###
 # .gitignore content is duplicated here due to https://github.com/prettier/prettier/issues/8506
 
