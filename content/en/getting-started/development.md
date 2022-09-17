@@ -1,9 +1,11 @@
 ---
-title: Getting started with Gallerium
+title: Development Dummy Page
 category: Introduction
-description: A brief introduction to what this is all about and how does it matter.
+description: This is a placeholder page that only used during development to test out and experiment things quickly. It will be removed when the project is completed.
 tags:
-  - n/a
+  - development
+  - temporary
+  - will be deleted
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
