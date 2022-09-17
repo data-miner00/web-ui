@@ -109,6 +109,19 @@ export default Vue.extend({
   @apply border-b-2;
 }
 
+/* New feature added v-quicklinks that has links */
+.nuxt-content a.quicklinks {
+  @apply font-normal border-b-0;
+}
+
+.nuxt-content a.quicklinks:hover {
+  @apply border-b-0;
+}
+
+.nuxt-content .quicklinks p {
+  @apply my-0;
+}
+
 .nuxt-content blockquote {
   @apply rounded-sm border-l-4 border-pink-400 py-3 my-3 pl-6 dark:bg-gray-600 bg-gray-200 bg-opacity-30;
 }
