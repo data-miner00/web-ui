@@ -54,7 +54,8 @@
           >
             <DarkModeButton />
             <a
-              href=""
+              href="https://github.com/data-miner00/web-ui"
+              target="_blank"
               class="ml-4 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300"
               ><span class="sr-only">Gallerium on GitHub</span
               ><svg
