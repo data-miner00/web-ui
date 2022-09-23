@@ -2,97 +2,43 @@
 title: Getting started with Gallerium
 category: Introduction
 description: A brief introduction to what this is all about and how does it matter.
-author:
-  name: Shaun Chong
-  avatar: levi.png
 tags:
-  - n/a
+  - introduction
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Having a kickstart in the realm of web development can be quite a tedious and gruelling experience for many, or even downright intimidating for beginners. Here in Gallerium, we strive to provide the smoothest experience to everyone who has the interest to design and develop the web.
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+In this page, we had outlined the parts and pieces of the website and explain how they can be useful for your quest to be a better web developer.
 
-## Sample usage
+There are several parts that constitute to the entire website, in which most part are displayed as category that can be seen from the sidebar. The rest of the site are scattered all over the site but is still accessible nonetheless.
 
-### Font decoration
+## Tour Guide
 
-Ut enim ad minim veniam, **quis nostrud exercitation** ullamco laboris nisi ut aliquip _ex ea commodo_ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu `fugiat` nulla pariatur.
+### Summary
 
-### Image usage
+| Component       | Type     | Description                                                             |
+| --------------- | -------- | ----------------------------------------------------------------------- |
+| Getting Started | Category | Introduction to the website.                                            |
+| Beginner        | Category | Walking through the rudimental concepts and resources to kickstart.     |
+| Latest Trends   | Category | Keeping track of the hottest trend going on the design world.           |
+| Collections     | Category | A repository of aesthetic components found online.                      |
+| Learn           | Category | Includes resources to learn UI/UX and web development in general.       |
+| Tools           | Category | Provides a suite of useful tools that can be handy when in development. |
+| Testing         | Category | Everything regarding testing such as unit test and ui tests.            |
+| Miscellaneous   | Category | Some other things that does not belongs to any agenda.                  |
 
-<v-img folder="test" image="NFT.png"></v-img>
+### Getting Started
 
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+This section is mainly about getting the readers to familiarize with the website and give them some info on what to expect from this website.
 
-### Block usage
+The following subsections are as shown below:
 
-> This is a sample blockquote
+| Subsection   | Description                                              |
+| ------------ | -------------------------------------------------------- |
+| Introduction | The absolute entry point to everything for this website. |
+| Future Works | Outlines the future works that will be implemented.      |
+| Development  | A dummy page that only used for development purposes.    |
 
-<blockquote class="danger">This is a dangerous blockquote</blockquote>
-<blockquote class="info">This is a infoous blockquote</blockquote>
-<blockquote class="warning">This is a warningous blockquote</blockquote>
+### Beginner
 
----
-
-### List usage
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-#### Ordered list
-
-The following:
-
-1. Yes
-2. No
-3. Maybe
-
-#### Unordered list
-
-What fruit is this?
-
-- Apple
-- Orange
-- Watermelon
-
-#### Nested unordered list
-
-The following unordered nested list:
-
-- This is the only way
-  - Unless there is another way
-  - Or there is another way
-  - But where is the other way
-- There is no way
-- There might be way or no way
-
-### Sample links
-
-Please visit this [website](https://www.google.com)
-
-### Code blocks
-
-```cs
-using System.Collections.Generic;
-
-namespace MainProj
-{
-    class Program
-    {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Hello"); Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");Console.WriteLine("Hello");
-        }
-    }
-}
-```
-
-### Table views
-
-| No of Enchantments | Steps                           |
-| ------------------ | ------------------------------- |
-| 1 - 3              | Put it directly with the item   |
-| 4                  | 2 to item, 2 to book            |
-| 5                  | 2 to item, 3 to book            |
-| 6                  | 2 to item, 2 to book, 2 to book |
-| 7                  | 3 to item, 2 to book, 2 to book |
+The
