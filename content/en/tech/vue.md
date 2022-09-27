@@ -34,12 +34,13 @@ There are 2 popular versions of Vue, which is the version 2 (2.x) and the latest
 
 ### Vue V2
 
+Vue V2 features the Options API.
+
 - https://v2.vuejs.org/
 - https://devdocs.io/vue~2/
 - https://vuedose.tips/
 - https://vueschool.io/
 - https://nuxtjs.org/
-- https://vuejs.org/
 - https://www.vuemastery.com/
 - https://laracasts.com/series/learn-vue-2-step-by-step
 - https://gridsome.org/
@@ -50,9 +51,55 @@ There are 2 popular versions of Vue, which is the version 2 (2.x) and the latest
 - https://vuetifyjs.com/en/
 - https://motion.vueuse.org/
 
+### Vue V3
+
+The newest version of Vue.js that is rewritten in TypeScript, hence it comes with a first-class support for TypeScript with Vue.
+
+Evan You once tweeted a sneak peek of the latest upgrade for Vue back on Christmas 2021.
+
+<blockquote class="twitter-tweet tw-align-center"><p lang="en" dir="ltr">Ok, just want to get this out so I can enjoy the holidays:<br>A preview of the new Vue 3 docs that we&#39;ve been working on: <a href="https://t.co/WqoIlFcyn5">https://t.co/WqoIlFcyn5</a><br><br>- New design / implementation<br>- Toggle preference between Composition API / Options API<br>- Updated recommendations<br>...and more!</p>&mdash; Evan You (@youyuxi) <a href="https://twitter.com/youyuxi/status/1474751849467023365?ref_src=twsrc%5Etfw">December 25, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+There are quite a number of difference between the two versions of Vue, or rather the Options API and the Composition API.
+
+A prime example would be the way to declare a reactive state. In Options API, all the state is stored within the `data` method within the default export.
+
+```html
+<script>
+  export default {
+    data() {
+      return {
+        name: "Keith",
+      };
+    },
+  };
+</script>
+```
+
+Whereas in Composition API, we will need to use `ref` for the same declaration within the `setup` method.
+
+```html
+<script>
+  import { ref } from "vue";
+
+  export default {
+    setup() {
+      const name = ref('Keith');
+
+      return {
+        name,
+      };
+    },
+  };
+</script>
+```
+
+[This article](https://plainenglish.io/blog/differences-between-vue-2-and-vue-3) discusses the differences between the two versions of Vue in a much greater detail.
+
 ### Nuxt
 
 Nuxt.js is a server-side framework for Vue. It supports server-side rendering and static site generation out of the box. SSR/SSG will greatly improve the search engine optimazation (SEO) results. Besides, it also supports client-side rendering as well.
+
+Nuxt.js also have two distinct versions that are used widely, which are Nuxt v2 and Nuxt v3 respectively.
 
 - https://content.nuxtjs.org/
 - https://tailwindcss.nuxtjs.org/
@@ -62,7 +109,7 @@ Nuxt.js is a server-side framework for Vue. It supports server-side rendering an
 
 ### Vue Devtools
 
-Vue devtools is a browser extension that can be used to debug Vue application directly in the browser of choice. It supports Vuex state as well. For Chromium-based browsers such as Chrome, Brave and Edge, the devtools can be found [here](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd). For Firefox, the devtools can be obtained via the [marketplace](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+Vue devtools is a browser extension that can be used to debug Vue application directly in the browser of choice. It supports Vuex state as well. For Chromium-based browsers such as Chrome, Brave and Edge, the devtools can be found [here](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd). For Firefox, the devtools can be obtained via the [marketplace](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/).
 
 ### CLI
 
