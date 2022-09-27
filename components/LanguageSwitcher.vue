@@ -39,7 +39,7 @@
     </button>
     <div
       v-show="isLanguagePopoverOpen"
-      class="absolute top-full right-0 mt-1 py-2 w-32 rounded-lg bg-white shadow ring-1 ring-gray-300 text-sm leading-6 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-900"
+      class="absolute top-full right-0 mt-1 py-2 w-32 rounded-lg bg-white shadow ring-1 ring-gray-300 text-sm leading-6 font-semibold text-gray-700 dark:bg-gray-800 dark:text-gray-300 dark:ring-gray-500"
       aria-labelledby="headlessui-menu-button-2"
       id="headlessui-menu-items-3"
       role="menu"
@@ -59,7 +59,7 @@
         role="menuitem"
         :to="switchLocalePath('ja')"
       >
-        Japanese
+        日本語
       </nuxt-link>
     </div>
   </div>
