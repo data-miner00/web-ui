@@ -99,7 +99,7 @@ Whereas in Composition API, we will need to use `ref` for the same declaration w
 
 Nuxt.js is a server-side framework for Vue. It supports server-side rendering and static site generation out of the box. SSR/SSG will greatly improve the search engine optimazation (SEO) results. Besides, it also supports client-side rendering as well.
 
-Nuxt.js also have two distinct versions that are used widely, which are Nuxt v2 and Nuxt v3 respectively.
+Nuxt.js also have two distinct versions that are used widely, which are Nuxt v1 and Nuxt v2 respectively. Nuxt v1 is based on Vue v2 and Nuxt v2 uses Vue v3.
 
 - https://content.nuxtjs.org/
 - https://tailwindcss.nuxtjs.org/
