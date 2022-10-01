@@ -11,12 +11,12 @@ quicklinks:
   - name: Next.js
     icon: /_nuxt/assets/images/tech/react/logo-icons/next-js.svg
     url: https://nextjs.org/
-  - name: Gatsby.js
-    icon: /_nuxt/assets/images/tech/react/logo-icons/gatsby.png
-    url: https://www.gatsbyjs.com/
-  - name: Redux
-    icon: /_nuxt/assets/images/tech/react/logo-icons/redux.svg
-    url: https://redux.js.org/
+  - name: Material UI
+    icon: /_nuxt/assets/images/tech/react/logo-icons/mui.png
+    url: https://mui.com/
+  - name: Framer Motion
+    icon: /_nuxt/assets/images/tech/react/logo-icons/motion.webp
+    url: https://www.framer.com/motion/
   - name: Redwood.js
     icon: /_nuxt/assets/images/tech/react/logo-icons/redwood.png
     url: https://redwoodjs.com/
