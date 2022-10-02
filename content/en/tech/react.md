@@ -26,6 +26,12 @@ quicklinks:
 
 ## Introduction
 
+### What is React
+
+### Class Component
+
+### Functional Component
+
 ### Links
 
 - https://www.apollographql.com/
@@ -38,7 +44,19 @@ quicklinks:
 - https://www.gatsbyjs.com/
 - https://remix.run/
 - https://reactstrap.github.io/?path=/story/home-installation--page
+- https://testing-library.com/docs/react-testing-library/intro/
+- https://www.robinwieruch.de/react-libraries/
+- https://react-spring.dev/
+- https://enzymejs.github.io/enzyme/
+- https://reactrouter.com/en/main
+- https://blitzjs.com/
+- https://ant.design/
 
 ### Resources
 
 - https://react-typescript-cheatsheet.netlify.app/
+
+### Topics
+
+- https://reactjs.org/docs/error-boundaries.html
+- https://reactjs.org/docs/higher-order-components.html
