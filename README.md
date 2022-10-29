@@ -15,6 +15,8 @@ An informational/documentation site for front-end related development knowledges
 References will be listed here if any.
 
 https://studioterabyte.nl/en/blog/nuxt-content-i18n
+https://davidparks.dev/blog/nuxt-table-of-contents-with-active-states/
+https://www.npmjs.com/package/reading-time
 
 ## Caution
 
