@@ -1,5 +1,7 @@
 <template>
-  <div class="flex items-center justify-between my-4">
+  <div
+    class="flex items-center justify-center gap-2 md:gap-0 md:justify-between my-4 flex-wrap"
+  >
     <a
       v-for="(quicklink, index) in quicklinks"
       :key="index"
