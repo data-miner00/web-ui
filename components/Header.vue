@@ -7,6 +7,40 @@
         class="py-4 lg:px-8 mx-4 lg:mx-0 flex items-center transition-colors duration-500"
       >
         <!-- left most -->
+        <button class="block md:hidden dark:text-gray-200 text-gray-700 mr-1">
+          <svg
+            width="19"
+            height="16"
+            viewBox="0 0 19 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="2"
+              y="2"
+              width="15"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="2"
+              y="7"
+              width="12"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+            <rect
+              x="2"
+              y="12"
+              width="15"
+              height="2"
+              rx="1"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
         <nuxt-link to="/" class="flex items-center">
           <svg
             class="flex-none"
@@ -20,7 +54,7 @@
             <circle cx="18.5" cy="17.5" r="4.5" fill="#FB7185" />
           </svg>
           <span
-            class="flex-none uppercase text-2xl tracking-widest ml-2 text-gray-700 dark:text-gray-200"
+            class="hidden sm:inline flex-none uppercase text-2xl tracking-widest ml-2 text-gray-700 dark:text-gray-200"
             >Gallerium</span
           >
         </nuxt-link>
@@ -35,7 +69,7 @@
         <div class="ml-auto flex items-center">
           <!-- navlinks -->
           <nav
-            class="text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200"
+            class="hidden md:block text-sm leading-6 font-semibold text-gray-700 dark:text-gray-200"
           >
             <ul class="flex space-x-8">
               <li
@@ -50,7 +84,7 @@
 
           <!-- buttons -->
           <div
-            class="ml-6 pl-6 border-l border-gray-200 border-solid flex items-center"
+            class="ml-6 pl-6 border-l md:border-gray-200 border-solid border-transparent flex items-center"
           >
             <DarkModeButton />
             <a

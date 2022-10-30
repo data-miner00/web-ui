@@ -1,5 +1,5 @@
 <template>
-  <div class="relative ml-4">
+  <div class="relative ml-4 hidden md:block">
     <button
       class="text-xs leading-5 font-semibold text-gray-500 bg-gray-100 rounded-full py-1 px-3 flex items-center space-x-2 hover:bg-gray-200 dark:highlight-white dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600"
       id="headlessui-menu-button-1"
