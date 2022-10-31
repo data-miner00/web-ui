@@ -88,6 +88,8 @@ End Class
 
 ### Table views
 
+<div class="table-wrapper">
+
 | No of Enchantments | Steps                           |
 | ------------------ | ------------------------------- |
 | 1 - 3              | Put it directly with the item   |
@@ -95,3 +97,5 @@ End Class
 | 5                  | 2 to item, 3 to book            |
 | 6                  | 2 to item, 2 to book, 2 to book |
 | 7                  | 3 to item, 2 to book, 2 to book |
+
+</div>

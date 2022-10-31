@@ -69,7 +69,7 @@ export default Vue.extend({
 .nuxt-content p,
 .nuxt-content > ul,
 .nuxt-content ol {
-  @apply my-6;
+  @apply my-6 leading-7;
 }
 
 .nuxt-content code {
@@ -170,8 +170,12 @@ export default Vue.extend({
   @apply my-2;
 }
 
+.nuxt-content .table-wrapper {
+  @apply overflow-x-auto my-8;
+}
+
 .nuxt-content table {
-  @apply w-full text-left border-collapse table-auto my-8;
+  @apply w-full text-left border-collapse table-auto;
 }
 
 .nuxt-content thead tr {
