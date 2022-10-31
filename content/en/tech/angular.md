@@ -35,18 +35,18 @@ Angular is a platform and framework for building SPAs (Single Page Apps) using H
 | Version | Name | Status | Initial Release Date |
 | --- | --- | --- | --- |
 | 1.x | Angular.js | EOL | Oct 20, 2010 |
-| 2.x | Angular 2 | Active | September 2016 |
+| 2.x | Angular 2 | EOL | September 2016 |
 | 3.x | Angular 3 | Not released | - |
-| 4.x | Angular 4 | Active | March 2017 |
-| 5.x | Angular 5 | Active | Nov 2017 |
-| 6.x | Angular 6 | Active | May 2018 |
-| 7.x | Angular 7 | Active | Oct 2018 |
-| 8.x | Angular 8 | Active | May 2019 |
-| 9.x | Angular 9 | Active | Feb 2020 |
-| 10.x | Angular 10 | Active | June 2020 |
-| 11.x | Angular 11 | Active | Nov 2020 |
-| 12.x | Angular 12 | Active | May 2021 |
-| 13.x | Angular 13 | Active | Nov 2021 |
+| 4.x | Angular 4 | EOL | March 2017 |
+| 5.x | Angular 5 | EOL | Nov 2017 |
+| 6.x | Angular 6 | EOL | May 2018 |
+| 7.x | Angular 7 | EOL | Oct 2018 |
+| 8.x | Angular 8 | EOL | May 2019 |
+| 9.x | Angular 9 | EOL | Feb 2020 |
+| 10.x | Angular 10 | EOL | June 2020 |
+| 11.x | Angular 11 | EOL | Nov 2020 |
+| 12.x | Angular 12 | LTS | May 2021 |
+| 13.x | Angular 13 | LTS | Nov 2021 |
 | 14.x | Angular 14 | Active | June 2022 |
 
 </div>
