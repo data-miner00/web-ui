@@ -8,37 +8,14 @@
       >
         <!-- left most -->
         <button class="block md:hidden dark:text-gray-200 text-gray-700 mr-1">
-          <svg
-            width="19"
-            height="16"
-            viewBox="0 0 19 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="2"
-              width="15"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            />
-            <rect
-              x="2"
-              y="7"
-              width="12"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            />
-            <rect
-              x="2"
-              y="12"
-              width="15"
-              height="2"
-              rx="1"
-              fill="currentColor"
-            />
+          <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="2"
+              d="M4 7h22M4 15h22M4 23h22"
+            ></path>
           </svg>
         </button>
         <nuxt-link to="/" class="flex items-center">
