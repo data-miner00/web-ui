@@ -1,8 +1,5 @@
 <template>
-  <div
-    @click="closeIfPopover"
-    class="dark:bg-gray-800 bg-white transition-colors duration-250 min-h-screen"
-  >
+  <div @click="closeIfPopover" class="dark:bg-gray-800 bg-white min-h-screen">
     <Header />
     <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">

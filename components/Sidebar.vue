@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden lg:block fixed z-20 inset-0 right-auto pb-10 px-8 overflow-y-auto transition-colors ease-in duration-500"
+    class="hidden lg:block fixed z-20 inset-0 right-auto pb-10 px-8 overflow-y-auto"
     id="nav-wrapper"
   >
     <nav id="nav" class="lg:text-sm lg:leading-6 relative">
