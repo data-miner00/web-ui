@@ -1,7 +1,7 @@
 <template>
   <div class="toc fixed z-20 py-10 px-8 overflow-y-auto hidden xl:block">
     <h5 class="font-bold text-sm mb-4 leading-6">Contents covered</h5>
-    <ul class="leading-6 text-sm">
+    <ul class="leading-6 text-sm mb-4">
       <li v-for="link in quicklinks" :key="link.id">
         <nuxt-link
           :to="`#${link.id}`"
@@ -16,13 +16,17 @@
         </nuxt-link>
       </li>
     </ul>
+
+    <ads-card image="ads1.jpg" displayText="Get your very own now!" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import AdsCard from './AdsCard.vue'
 
 export default Vue.extend({
+  components: { AdsCard },
   props: {
     quicklinks: Array,
   },
