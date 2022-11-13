@@ -17,16 +17,14 @@
       </li>
     </ul>
 
-    <ads-card image="ads1.jpg" displayText="Get your very own now!" />
+    <AdsCard image="ads1.jpg" displayText="Get your very own now!" />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import AdsCard from './AdsCard.vue'
 
 export default Vue.extend({
-  components: { AdsCard },
   props: {
     quicklinks: Array,
   },

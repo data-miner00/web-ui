@@ -5,13 +5,9 @@
     :href="url"
   >
     <img :src="src" alt="Advertisement illustration" class="block" />
-    <caption
-      class="text-xs dark:text-gray-200 text-gray-700 font-semibold py-1"
-    >
-      {{
-        displayText
-      }}
-    </caption>
+    <p class="text-xs dark:text-gray-200 text-gray-700 font-semibold py-1">
+      {{ displayText }}
+    </p>
   </a>
 </template>
 
