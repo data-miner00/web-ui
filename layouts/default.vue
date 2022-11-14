@@ -1,5 +1,10 @@
 <template>
-  <div @click="closeIfPopover" class="dark:bg-gray-800 bg-white min-h-screen">
+  <div
+    @click="closeIfPopover"
+    class="dark:bg-gray-800 bg-white min-h-screen"
+    tabindex="0"
+    @keydown.ctrl="tryOpenSearchPanel"
+  >
     <Header />
     <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
       <div class="max-w-8xl mx-auto px-4 sm:px-6 md:px-8">
@@ -24,6 +29,12 @@ export default Vue.extend({
 
       if (this.isVersionPopoverOpen)
         this.$store.commit('popover/setVersionPopover', false)
+    },
+    tryOpenSearchPanel(event: KeyboardEvent): void {
+      if (event.key === 'k') {
+        event.preventDefault()
+        this.$store.commit('popover/setSearchPanel', true)
+      }
     },
   },
   computed: {
