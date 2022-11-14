@@ -9,6 +9,7 @@
         <nuxt />
       </div>
     </div>
+    <Search />
   </div>
 </template>
 
