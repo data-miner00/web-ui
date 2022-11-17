@@ -50,34 +50,20 @@ export default Vue.extend({
   data: () => ({
     theme: '',
   }),
-  mounted(): void {
-    this.initTheme()
+  mounted() {
+    this.theme = localStorage.theme
   },
   methods: {
-    initTheme(): void {
-      const theme = localStorage.getItem('theme')
-
-      if (
-        theme == 'dark' ||
-        (theme == null &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches)
-      ) {
-        this.theme = 'dark'
-        document.documentElement.classList.add('dark')
-      } else {
-        this.theme = 'light'
-        document.documentElement.classList.remove('dark')
-      }
-    },
     setTheme(): void {
-      const newTheme = this.theme && this.theme == 'dark' ? 'light' : 'dark'
-      this.theme = newTheme
-      if (this.theme == 'dark') {
+      if (this.theme == 'light') {
+        localStorage.theme = 'dark'
         document.documentElement.classList.add('dark')
+        this.theme = 'dark'
       } else {
+        localStorage.theme = 'light'
         document.documentElement.classList.remove('dark')
+        this.theme = 'light'
       }
-      localStorage.setItem('theme', newTheme)
     },
   },
 })
