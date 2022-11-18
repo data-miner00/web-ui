@@ -9,7 +9,7 @@
       "url": ""
     },
     {
-      "title": "Library",
+      "title": "News & Blogs",
       "url": ""
     },
     {
@@ -17,11 +17,11 @@
       "url": ""
     },
     {
-      "title": "Information",
-      "url": ""
+      "title": "Codepen",
+      "url": "https://codepen.io/"
     },
     {
-      "title": "Tailwind.css",
+      "title": "TailwindCSS",
       "url": "https://tailwindcss.com/"
     }
   ],
@@ -49,16 +49,56 @@
       "basepath": "/collections",
       "links": [
         {
-          "title": "Navbar",
-          "url": "/navbar"
+          "title": "Accordion",
+          "url": "/accordion"
+        },
+        {
+          "title": "Alerts",
+          "url": "/alerts"
+        },
+        {
+          "title": "Avatars",
+          "url": "/avatars"
+        },
+        {
+          "title": "Badges",
+          "url": "/badges"
+        },
+        {
+          "title": "Banners",
+          "url": "/banners"
         },
         {
           "title": "Breadcrumbs",
           "url": "/breadcrumbs"
         },
         {
-          "title": "Accordion",
-          "url": "/accordion"
+          "title": "Buttons",
+          "url": "/buttons"
+        },
+        {
+          "title": "Cards",
+          "url": "/cards"
+        },
+        {
+          "title": "Carousels",
+          "url": "/carousels"
+        },
+        {
+          "title": "Chips",
+          "url": "/chips"
+        },
+        {
+          "title": "Dividers",
+          "url": "/dividers"
+        },
+        {
+          "title": "Navbar",
+          "url": "/navbar"
+        },
+        {
+          "title": "Rating",
+          "url": "/rating"
         },
         {
           "title": "Advertisement",
@@ -79,32 +119,44 @@
           "url": "/overview"
         },
         {
+          "title": "Angular",
+          "url": "/angular"
+        },
+        {
+          "title": "Asp.net",
+          "url": "/aspnet"
+        },
+        {
           "title": "Browsers",
           "url": "/browsers"
+        },
+        {
+          "title": "Blazor",
+          "url": "/blazor"
+        },
+        {
+          "title": "Css",
+          "url": "/css"
         },
         {
           "title": "React",
           "url": "/react"
         },
         {
-          "title": "Angular",
-          "url": "/angular"
+          "title": "Svelte",
+          "url": "/svelte"
         },
         {
           "title": "Vue",
           "url": "/vue"
         },
         {
-          "title": "ASP.NET",
-          "url": "/aspdotnet"
-        },
-        {
           "title": "Laravel",
           "url": "/laravel"
         },
         {
-          "title": "CSS",
-          "url": "/css"
+          "title": "Wasm",
+          "url": "/wasm"
         }
       ]
     },
@@ -117,12 +169,12 @@
           "url": "/overview"
         },
         {
-          "title": "Jest",
-          "url": "/jest"
-        },
-        {
           "title": "Chai",
           "url": "/chai"
+        },
+        {
+          "title": "Jest",
+          "url": "/jest"
         },
         {
           "title": "Jasmine",
@@ -131,6 +183,10 @@
         {
           "title": "Selenium",
           "url": "/selenium"
+        },
+        {
+          "title": "Vitest",
+          "url": "/vitest"
         }
       ]
     },
@@ -139,8 +195,20 @@
       "basepath": "/web3",
       "links": [
         {
+          "title": "Blockchain",
+          "url": "/blockchain"
+        },
+        {
+          "title": "Dapps",
+          "url": "/dapps"
+        },
+        {
           "title": "Wallets",
           "url": "/wallets"
+        },
+        {
+          "title": "Tools",
+          "url": "/tools"
         }
       ]
     },
@@ -157,16 +225,16 @@
           "url": "/colors"
         },
         {
-          "title": "Youtube",
-          "url": "/youtube"
-        },
-        {
-          "title": "Advertisement",
-          "url": "/advertisement"
+          "title": "Socials",
+          "url": "/socials"
         },
         {
           "title": "Toolbox",
           "url": "/toolbox"
+        },
+        {
+          "title": "Youtube",
+          "url": "/youtube"
         },
         {
           "title": "Dumps",
