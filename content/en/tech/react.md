@@ -1,12 +1,12 @@
 ---
 title: React
 category: Web Technologies
-description: A declarative, efficient and flexible JavaScript library for building user interfaces
+description: A declarative, efficient and flexible JavaScript library for building user interfaces.
 tags:
   - react
 quicklinks:
   - name: React.js
-    icon: /_nuxt/assets/images/tech/react/logo-icons/React-icon.svg.png
+    icon: /_nuxt/assets/images/tech/react/logo-icons/react.png
     url: https://react.js.org/
   - name: Next.js
     icon: /_nuxt/assets/images/tech/react/logo-icons/next-js.svg
@@ -28,29 +28,52 @@ quicklinks:
 
 ### What is React
 
-### Class Component
+React is a JavaScript library for building rich interactive user interfaces. React has a rich and **mature ecosystem** as more and more company adopts the technology and also a myriad of technologies are built based off of React. Technology such as Next.js, Gatsby.js, Redwood.js, Remix.js are the [metaframeworks](https://prismic.io/blog/javascript-meta-frameworks-ecosystem#meta-framework) of React.
 
-### Functional Component
+### React Native
 
-### Links
+Besides, that [React Native](https://reactnative.dev/), an extended technology from React that can be used for building native cross-platform applications are a very popular technology too as the learning curve is friendly to the developers that had already familiar with React.
 
-- https://www.apollographql.com/
+## Links
+
+### State Management
+
 - https://react-redux.js.org/
 - https://redux.js.org/
-- https://react-query.tanstack.com/
+
+### UI Frameworks
+
 - https://mui.com/
 - https://chakra-ui.com/
 - https://www.framer.com/motion/
+- https://ant.design/
+
+### Testing
+
+- https://enzymejs.github.io/enzyme/
+- https://testing-library.com/docs/react-testing-library/intro/
+
+### API
+
+- https://www.apollographql.com/
+
+### Static-site Generator
+
+- [Next.js](https://nextjs.org/)
+- [Gatsby.js](https://www.gatsbyjs.com/)
+- [Docusaurus](https://docusaurus.io/)
+
+### Links
+
+- https://react-query.tanstack.com/
 - https://www.gatsbyjs.com/
 - https://remix.run/
 - https://reactstrap.github.io/?path=/story/home-installation--page
-- https://testing-library.com/docs/react-testing-library/intro/
 - https://www.robinwieruch.de/react-libraries/
 - https://react-spring.dev/
-- https://enzymejs.github.io/enzyme/
 - https://reactrouter.com/en/main
 - https://blitzjs.com/
-- https://ant.design/
+- https://create-react-app.dev/
 
 ### Resources
 
