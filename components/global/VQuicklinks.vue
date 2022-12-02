@@ -46,7 +46,7 @@ export default Vue.extend({
 
 <style>
 .quicklinks {
-  --background-color: rgba(249, 250, 251, 0.8);
+  --background-color: rgba(241, 246, 249, 0.8);
   --line-color: rgb(225, 226, 226);
   background-color: var(--background-color);
   background-image: linear-gradient(var(--line-color) 1px, transparent 1px),
