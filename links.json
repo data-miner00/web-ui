@@ -221,6 +221,10 @@
           "url": "/articles"
         },
         {
+          "title": "APIs",
+          "url": "/api"
+        },
+        {
           "title": "Colors",
           "url": "/colors"
         },

@@ -1,0 +1,4 @@
+- https://www.magicpattern.design/tools/css-backgrounds
+- https://css-tricks.com/a-few-background-patterns-sites/
+- https://www.svgbackgrounds.com/
+- https://heropatterns.com/
